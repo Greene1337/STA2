@@ -18,10 +18,6 @@ struct IntegerList
 
 void IntegerListInit(IntegerList & _list);
 
-void IntegerListSplice(IntegerList & _sourceList, IntegerList::Node * _pSplitNode, IntegerList & _targetList1, IntegerList & _targetList2);
-
-bool IntegerListIsSorted(const IntegerList & _list);
-
 void IntegerListDestroy(IntegerList & _list);
 
 bool IntegerListIsEmpty(const IntegerList & _list);
