@@ -6,20 +6,6 @@ void IntegerListInit(IntegerList & _list)
 	_list.m_pFirst = _list.m_pLast = nullptr;
 }
 
-int IntegerListAccumulate(const IntegerList & _list)
-{
-	int sum = 0;
-	for (i = _list.m_pFirst; i < _list.m_pLast; i++)
-	{
-		sum = sum + _list.m_pFirst;
-	}
-}
-
-void IntegerListSplice(IntegerList & _sourceList, IntegerList::Node * _pSplitNode, IntegerList & _targetList1, IntegerList & _targetList2)
-
-bool IntegerListIsSorted(const IntegerList & _list)
-{
-	
 
 void IntegerListDestroy(IntegerList & _list)
 {
@@ -268,10 +254,4 @@ void IntegerListReadTillZero(IntegerList & _list, std::istream & _stream)
 		else
 			break;
 	}
-}
-
-
-bool IntegerListIsSorted(const IntegerList & _list)
-{
-	return false;
 }
